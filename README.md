@@ -2,6 +2,8 @@
 This is the implementation of the paper **Synthetic-to-real domain adaptation joint spatial feature transform for stereo matching**, Xing Li, Yangyu Fan, Zhibo Rao, Guoyun Lv, and Shiya Liu.
 The code was written by Xing Li and Zhibo Rao.
 
+<img src="https://junyanz.github.io/CycleGAN/images/teaser_high_res.jpg" width="900"/>
+
 ### Software Environment
 1. OS Environment  
     os == windows 10  
