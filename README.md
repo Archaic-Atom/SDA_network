@@ -9,7 +9,7 @@ We propose a new method that translates the style of synthetic domain dataset to
 <img src="images/0.jpg" width="900"/>  
 The architecture of our proposed SDA network. The core of our approach is to 1) compel the generated images to preserve content and spatial information with inputs, 2) prevent generated stereo left-right pairs mismatch. For this purpose, we leverage cues for edge features through a spatial feature transform layer to enforce spatial consistency between stereo images. Furthermore, we adopt the warp loss to encourage the warpped left image approach to the original left image.
 
-### Software Environment
+## Software Environment
 1. OS Environment  
     os == windows 10  
     cudaToolKit == 10.0  
@@ -20,23 +20,24 @@ The architecture of our proposed SDA network. The core of our approach is to 1) 
     numpy == 1.19.2  
     opencv-python == 4.5.1.48  
     pillow == 8.1.0  
+## Data Preparation
+Download [Scene Flow Datasets](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html), [Synthia](https://synthia-dataset.net/downloads/), [KITTI 2012](http://www.cvlibs.net/datasets/kitti/eval_stereo_flow.php?benchmark=stereo), [KITTI 2015](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo)
 
-
-### Training:
+## Training:
 
 Run the TrainSDANet.sh
 ```
 $ sh TrainSDANet.sh
 ```
 
-### Testing:
+## Testing:
 
 Run the TestSDANet.sh
 ```
 $ sh TestSDANet.sh
 ```
 
-### File Structure
+## File Structure
 ```
 .                          
 ├── Source # source code                 
