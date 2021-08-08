@@ -12,57 +12,33 @@ The code was written by Xing Li and Zhibo Rao.
     tensorflow == 1.15.0  
     numpy == 1.19.2  
     opencv-python == 4.5.1.48  
-    PIL == 5.1.0  
+    pillow == 8.1.0  
 
-%### Model
-%We have upload our model in baidu disk:
-%https://pan.baidu.com/s/11FNUv8M5L4aO_Are9UjRUA
-%password: qrho
 
-### Hardware Environment
-- GPU: 1080TI * 4 or other memory at least 11G.(Batch size: 2)  
-if you not have four gpus, you could change the para of model. The Minimum hardware requirement:  
-- GPU: memory at least 5G. (Batch size: 1)
+### Training:
 
-### Train the model by running:
-1. Get the Training list or Testing list
+Run the TrainSDANet.sh
 ```
-$ ./GenPath.sh
-```
-Please check the path. The source code in Source/Tools.
-
-2. Run the pre-training.sh
-```
-$ ./Pre-Train.sh
+$ sh TrainSDANet.sh
 ```
 
-3. Run the trainstart.sh
+### Testing:
+
+Run the TestSDANet.sh
 ```
-$ ./TrainKitti2012.sh # for kitti2012
-$ ./TrainKitti2015.sh # for kitti2015
+$ sh TestSDANet.sh
 ```
 
-4. Run the teststart.sh
-```
-$ ./TestKitt2012.sh # for 2012
-$ ./TestKitt2015.sh # for 2015
-```
-
-if you want to change the para of the model, you can change the *.sh file. Such as:
-```
-$ vi TestStart.sh
-```
-
-### File Struct
+### File Structure
 ```
 .                          
 ├── Source # source code                 
 │   ├── Basic       
 │   ├── Evaluation       
 │   └── ...                
-├── Dataset # Get it by ./GenPath.sh, you need build folder                   
-│   ├── label_scene_flow.txt   
-│   ├── trainlist_scene_flow.txt   
+├── Dataset # Get it by ./Source/Tools/GenPath.sh, you need build folder                   
+│   ├── trainlist.txt   
+│   ├── labellist.txt   
 │   └── ...                
 ├── Result # The data of Project. Auto Bulid                   
 │   ├── output.log   
@@ -76,12 +52,10 @@ $ vi TestStart.sh
 │   ├── checkpoint   
 │   └── ...   
 ├── log # The graph of model. Auto Bulid                   
-│   ├── events.out.tfevents.1541751559.ubuntu      
+│   ├── events.out.tfevents.1605153366.DESKTOP-GHD7UKT       
 │   └── ...       
-├── GetPath.sh
-├── Pre-Train.sh
-├── TestStart.sh  
-├── TrainStart.sh
+├── TrainSDANet.sh
+├── TestSDANet.sh  
 ├── LICENSE
 ├── requirements.txt
 └── README.md               
