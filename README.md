@@ -1,8 +1,10 @@
 # SDA_network
 This is the implementation of the paper **Synthetic-to-real domain adaptation joint spatial feature transform for stereo matching**, Xing Li, Yangyu Fan, Zhibo Rao, Guoyun Lv, and Shiya Liu.
-The code was written by Xing Li and Zhibo Rao.
+The code was written by Xing Li and Zhibo Rao.  
 
-<img src="https://junyanz.github.io/CycleGAN/images/teaser_high_res.jpg" width="900"/>
+We propose a new method that translates the style of synthetic domain dataset to the real domain but maintains content and spatial information. The visual results are as follows.  
+<img src="images/1.jpg" width="900"/>  
+**Synthetic-to-real domain translated results.** Blue circles emphasize the difference between the synthetic and translated images, including overall tone (blue sky), local color (the leaves), and sunlight reflection (the illuminate direction).
 
 ### Software Environment
 1. OS Environment  
