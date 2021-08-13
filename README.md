@@ -11,10 +11,8 @@ The architecture of our proposed SDA network. The core of our approach is to 1) 
 
 ## Result Videos
 *Left: input.* **Right: neural network generated.** Resolution: 960x574  
-**Original SceneFlow vs Translated SceneFlow**
-<center class"half">  
-    <img src='images/sceneflow.gif' width=480/><img src='images/sceneflow_translated.gif' width=480/>   
-</center>    
+**Original SceneFlow vs Translated SceneFlow**  
+<img src='images/sf_tsf.gif' width="900"/>  
 
 ## Software Environment
 1. OS Environment  
