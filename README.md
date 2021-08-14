@@ -6,13 +6,14 @@ We propose a new method that translates the style of synthetic domain dataset to
 <img src="images/1.jpg" width="900"/>  
 **Synthetic-to-real domain translated results.** Blue circles emphasize the difference between the synthetic and translated images, including overall tone (blue sky), local color (the leaves), and sunlight reflection (the illuminate direction).  
 
-<img src="images/0.jpg" width="900"/>  
+<img src="images/0.jpg" width="900"/><br />
 **The architecture of our proposed SDA network.** The core of our approach is to 1) compel the generated images to preserve content and spatial information with inputs, 2) prevent generated stereo left-right pairs mismatch. For this purpose, we leverage cues for edge features through a spatial feature transform layer to enforce spatial consistency between stereo images. Furthermore, we adopt the warp loss to encourage the warpped left image approach to the original left image.
 
 ## Result Videos
   
-<img src='images/sceneflow_sf_tsf.gif' width="900"/>  
-**Left: Original SceneFlow.** **Right: SDA-Net generated Translated SceneFlow.** Resolution: 960x574   
+<img src='images/sceneflow_sf_tsf.gif' width="900"/>    
+**The architecture of our proposed SDA network.**
+**Left: Original SceneFlow. Right: SDA-Net generated Translated SceneFlow.** Resolution: 960x574     
 
 <img src='images/sceneflow_disp_error.gif' width="900"/>  
 **Left: Disparity estimation results of Abc-Net that trained on the translated SceneFlow.** **Right: Disparity error.** Resolution: 960x574    
