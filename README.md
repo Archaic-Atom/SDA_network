@@ -11,12 +11,11 @@ We propose a new method that translates the style of synthetic domain dataset to
 
 ## Result Videos
   
-<img src='images/sceneflow_sf_tsf.gif' width="900"/>    
-**The architecture of our proposed SDA network.**
-**Left: Original SceneFlow. Right: SDA-Net generated Translated SceneFlow.** Resolution: 960x574     
+<img src='images/sceneflow_sf_tsf.gif' width="900"/><br />    
+**Left: Original SceneFlow. Right: SDA-Net generated Translated SceneFlow.** Resolution: 960x574 <br />     
 
-<img src='images/sceneflow_disp_error.gif' width="900"/>  
-**Left: Disparity estimation results of Abc-Net that trained on the translated SceneFlow.** **Right: Disparity error.** Resolution: 960x574    
+<img src='images/sceneflow_disp_error.gif' width="900"/><br />
+**Left: Disparity estimation results of Abc-Net that trained on the translated SceneFlow.** **Right: Disparity error.** Resolution: 960x574 <br />  
 
 ## Software Environment
 1. OS Environment  
