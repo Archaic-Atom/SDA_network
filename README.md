@@ -12,9 +12,11 @@ We propose a new method that translates the style of synthetic domain dataset to
 ## Result Videos
   
 <img src='images/sceneflow_sf_tsf.gif' width="900"/><br />
-**Left: Original SceneFlow. Right: SDA-Net generated translated SceneFlow.** Resolution: 960x574 <br />     
+*Left: Original SceneFlow. Right: SDA-Net generated translated SceneFlow.* Resolution: 960x574 <br />     
 <img src='images/sceneflow_disp_error.gif' width="900"/><br />
-**Left: Disparity estimation results of Abc-Net that trained on the translated SceneFlow.** **Right: Disparity error.** Resolution: 960x574 <br />  
+*Left: Disparity estimation results on the SceneFlow testing set. Model only trained on the translated SceneFlow training set. * Resolution: 960x574 <br />  
+<img src='images/kitti_image_disp.gif' width="900"/><br />
+*Left: Disparity estimation results on the KITTI training set. Model only trained on syntehtic datasets.* Resolution: 960x574 <br />  
 
 ## Software Environment
 1. OS Environment  
