@@ -16,7 +16,7 @@ We propose a new method that translates the style of synthetic domain dataset to
 <img src='images/sceneflow_disp_error.gif' width="900"/><br />
 **Disparity estimation results on the SceneFlow testing set. Model only trained on the translated SceneFlow training set.** Resolution: 960x574 <br />  
 <img src='images/kitti_image_disp.gif' width="900"/><br />
-**Disparity estimation results on the KITTI training set. Model only trained on syntehtic datasets.** Resolution: 960x574 <br />  
+**Disparity estimation results on the KITTI training set. Model only trained on syntehtic datasets.** Resolution: 1242x375 <br />  
 
 ## Software Environment
 1. OS Environment  
