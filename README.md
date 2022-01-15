@@ -3,11 +3,11 @@
 This is the implementation of the paper **Synthetic-to-real domain adaptation joint spatial feature transform for stereo matching**, Xing Li, Yangyu Fan, Zhibo Rao, Guoyun Lv, and Shiya Liu.
 The code was written by Xing Li and Zhibo Rao.  
 
-We propose a new method that translates the style of synthetic domain dataset to the real domain but maintains content and spatial information. The visual results are as follows.  
-<img src="images/1.pdf" width="900"/>  
+We propose a new method that translates the style of synthetic domain dataset to the real domain but maintains content and spatial information. 
+
 **Synthetic-to-real domain translated results.** Blue circles emphasize the difference between the synthetic and translated images, including overall tone (blue sky), local color (the leaves), and sunlight reflection (the illuminate direction).  
 
-<img src="images/0.jpg" width="900"/><br />
+<img src="images/1.jpg" width="900"/><br />
 **The architecture of our proposed SDA network.** The core of our approach is to 1) compel the generated images to preserve content and spatial information with inputs, 2) prevent generated stereo left-right pairs mismatch. For this purpose, we leverage cues for edge features through a spatial feature transform layer to enforce spatial consistency between stereo images. Furthermore, we adopt the warp loss to encourage the warpped left image approach to the original left image.
 
 ## Result Videos
@@ -84,3 +84,12 @@ $ sh TestSDANet.sh
 ├── requirements.txt
 └── README.md               
 ```
+If you find SDA-Network useful for your work please cite:
+
+@ARTICLE{lisynthetic,
+  author={Li, Xing and Fan, Yangyu and Rao, Zhibo and Lv, Guoyun and Liu, Shiya},
+  journal={IEEE Signal Processing Letters}, 
+  title={Synthetic-to-real domain adaptation joint spatial feature transform for stereo matching}, 
+  year={2021},
+  pages={1-5},
+  doi={10.1109/LSP.2021.3125264}}
