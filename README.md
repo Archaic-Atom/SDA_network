@@ -4,7 +4,7 @@ This is the implementation of the paper **Synthetic-to-real domain adaptation jo
 The code was written by Xing Li and Zhibo Rao.  
 
 We propose a new method that translates the style of synthetic domain dataset to the real domain but maintains content and spatial information. The visual results are as follows.  
-<img src="images/1.jpg" width="900"/>  
+<img src="images/1.pdf" width="900"/>  
 **Synthetic-to-real domain translated results.** Blue circles emphasize the difference between the synthetic and translated images, including overall tone (blue sky), local color (the leaves), and sunlight reflection (the illuminate direction).  
 
 <img src="images/0.jpg" width="900"/><br />
